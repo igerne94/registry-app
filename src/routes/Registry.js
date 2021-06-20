@@ -42,10 +42,16 @@ function Registry(){
 
     return (
         <div>
-         <h1>Registry</h1>
+         <h1>Super page</h1>
+
          <Link to="/">Click here to go to home</Link>
+         <br></br>
+
+         <Link to="/weather">Click here to go to weather</Link>
+
+
          <form onSubmit={addItem}>
-            <label>text input: 
+            <label>Please, input a city: 
               <input type="text" value={textInput} onChange={(e) => setTextInput(e.target.value) }></input>
             </label>
             <input type="submit" value="Submit"/>
